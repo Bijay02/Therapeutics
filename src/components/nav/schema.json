@@ -1,0 +1,68 @@
+[
+    {
+      "navId": "about-us",
+      "parentId": null,
+      "title": "About Us",
+      "url": "/about-us"
+    },
+    {
+      "navId": "our-team",
+      "parentId": "about-us",
+      "title": "Our Team",
+      "url": "/about-us/our-team"
+    },
+    {
+      "navId": "board-of-directors",
+      "parentId": "about-us",
+      "title": "Board of Directors",
+      "url": "/about-us/board-of-directors"
+    },
+    {
+      "navId": "our-scientific-founders",
+      "parentId": "about-us",
+      "title": "Our Scientific Founders",
+      "url": "/about-us/our-scientific-founders"
+    },
+    {
+      "navId": "scientific-advisory-board",
+      "parentId": "about-us",
+      "title": "Scientific Advisory Board",
+      "url": "/about-us/scientific-advisory-board"
+    },
+    {
+      "navId": "medicinal-chemistry-advisory-board",
+      "parentId": "about-us",
+      "title": "Medicinal Chemistry Advisory Board",
+      "url": "/about-us/medicinal-chemistry-advisory-board"
+    },
+    {
+      "navId": "our-investors",
+      "parentId": "about-us",
+      "title": "Our Investors",
+      "url": "/about-us/our-investors"
+    },
+    {
+      "navId": "our-science",
+      "parentId": null,
+      "title": "Our Science",
+      "url": "/our-science"
+    },
+    {
+      "navId": "careers",
+      "parentId": null,
+      "title": "Careers",
+      "url": "/careers"
+    },
+    {
+      "navId": "news",
+      "parentId": null,
+      "title": "News",
+      "url": "/news"
+    },
+    {
+      "navId": "contact",
+      "parentId": null,
+      "title": "Contact",
+      "url": "/contact"
+    }
+  ]

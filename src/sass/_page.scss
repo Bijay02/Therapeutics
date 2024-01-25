@@ -1,0 +1,138 @@
+.curved-border {
+    position: relative;
+    overflow: hidden;
+    padding-top: 80px !important;
+
+    @include lg {
+        padding-top: 150px !important;
+    }
+
+    &.curved-left {
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            background: url('../images/global/bordered-line-mobile.png') no-repeat;
+            background-size: 100%;
+            width: 89px;
+            height: 49px;
+
+            @include lg {
+                background: url('../images/global/bordered-line-desktop.png') no-repeat;
+                width: 159px;
+                height: 81px;
+            }
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 89px;
+            background: $secondary;
+            background-size: 100%;
+            width: 100%;
+            height: 1px;
+
+            @include lg {
+                left: 159px;
+            }
+        }
+    }
+
+    &.curved-right {
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            right: 0;
+            background: url('../images/global/bordered-line-mobile.png') no-repeat;
+            background-size: 100%;
+            width: 89px;
+            height: 49px;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+
+            @include lg {
+                background: url('../images/global/bordered-line-desktop.png') no-repeat;
+                width: 159px;
+                height: 81px;
+            }
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            right: 89px;
+            background: $secondary;
+            background-size: 100%;
+            width: 100%;
+            height: 1px;
+
+            @include lg {
+                right: 159px;
+            }
+        }
+    }
+
+}
+
+.no-curved-border {
+    padding-top: 70px !important;
+
+    @include lg {
+        padding-top: 100px !important;
+    }
+}
+
+.col-team-list {
+    margin-bottom: 40px !important;
+
+    @include lg {
+        margin-bottom: 69px !important;
+    }
+}
+
+.pagination {
+    margin-top: 60px;
+
+    ul {
+        li {
+            display: inline-block;
+            margin-right: 20px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            button,
+            .pagination_item {
+                background: transparent;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                font-size: 20px;
+                line-height: 28px;
+                text-decoration: underline;
+                color: $primary;
+
+                @include lg {
+                    font-size: 22px;
+                    line-height: 30px;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+
+                &.active {
+                    font-weight: $font-bold;
+                }
+            }
+        }
+    }
+}

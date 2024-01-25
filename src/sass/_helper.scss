@@ -1,0 +1,7 @@
+.mb-100{
+    margin-bottom: 80px;
+
+    @include lg{
+        margin-bottom: 100px;
+    }
+}

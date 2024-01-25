@@ -1,0 +1,139 @@
+body {
+  font-family: $font-family-base;
+  font-weight: $font-normal;
+  color: $body-color;
+  font-size: 18px;
+  line-height: 26px;
+
+  @include sm {
+    font-size: $font-base-size;
+    line-height: $font-base-line-height;
+  }
+
+  &.no-scroll {
+    overflow-y: hidden;
+  }
+}
+
+.pro-regular {
+  font-weight: $font-regular;
+}
+
+strong,
+.strong,
+.bold {
+  font-weight: $font-bold;
+}
+
+.italics,
+.italic {
+  font-style: italic;
+}
+
+.upper,
+.uppercase {
+  text-transform: uppercase;
+}
+
+sup {
+  vertical-align: super;
+  font-size: 0.65em;
+  line-height: 0;
+  color: inherit;
+}
+
+sub {
+  vertical-align: sub;
+  font-size: 0.65em;
+  line-height: 0;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+p:last-of-type {
+  margin-bottom: 0;
+}
+
+h1,
+.h1 {
+  font-weight: $font-bold;
+  font-size: 38px;
+  line-height: 42px;
+  color: $secondary;
+  font-family: $font-josefin-sans;
+
+  @include lg {
+    font-size: 46px;
+    line-height: 52px;
+  }
+
+  @include xl {
+    font-size: 52px;
+    line-height: 64px;
+  }
+}
+
+h2,
+.h2 {
+  font-family: $font-josefin-sans;
+  font-weight: $font-bold;
+  font-size: 30px;
+  line-height: 38px;
+  color: $secondary;
+
+  @include lg {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+h3,
+.h3 {
+  font-family: $font-josefin-sans;
+  font-weight: $font-bold;
+  font-size: 26px;
+  line-height: 32px;
+  color: $secondary;
+
+  @include lg {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+h4,
+.h4 {
+  font-family: $font-josefin-sans;
+  font-weight: $font-regular;
+  font-size: 26px;
+  line-height: 32px;
+  color: $secondary;
+
+  @include lg {
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
+
+.font-regular {
+  font-weight: $font-regular;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-white {
+  color: $white;
+}
+
+.bold {
+  font-weight: $font-bold;
+}

@@ -1,0 +1,15 @@
+@import "./reset";
+@import "./variables";
+@import "./breakpoints";
+@import "./mixins";
+@import "./base";
+@import "./header";
+@import "./footer";
+@import "./nav";
+@import "./layout";
+@import "./page";
+@import "./helper";
+
+// Keep IE styles at the end so that it overrides everything
+// Add ie styles to the end of the includes
+@import "./ie";

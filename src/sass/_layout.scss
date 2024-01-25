@@ -1,0 +1,61 @@
+.site-wrapper {
+    overflow: hidden;
+    margin: 0 auto;
+    min-height: 100%;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+.centered-content {
+    margin: auto;
+    width: 100%;
+    padding: $container-padding;
+
+    @include sm {
+        max-width: $container-max-widths-sm;
+    }
+
+    @include md {
+        max-width: $container-max-widths-md;
+    }
+
+    @include lg {
+        max-width: $container-max-widths-lg;
+    }
+
+    @include xl {
+        max-width: $container-max-widths-xl;
+    }
+
+    @include xxl {
+        max-width: $container-max-widths-xxl;
+    }
+}
+
+.centered-content-lg {
+    margin: auto;
+    width: 100%;
+    padding: $container-padding;
+
+    @include sm {
+        max-width: $container-max-widths-sm;
+    }
+
+    @include md {
+        max-width: $container-max-widths-md;
+    }
+
+    @include lg {
+        max-width: 1168px;
+    }
+
+    @include xl {
+        max-width: 1348-px;
+    }
+
+    @include xxl {
+        max-width: 1440px;
+    }
+}

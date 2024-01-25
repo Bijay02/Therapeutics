@@ -1,0 +1,126 @@
+@import "../sass/breakpoints";
+@import "../sass/variables";
+
+.site-header {
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+            a {
+                display: inline-block;
+            }
+        }
+    }
+
+    .header-logo {
+        width: 100%;
+        width: 130px;
+        transition: all 0.3s;
+
+        @include lg {
+            width: 214px;
+        }
+    }
+
+    .menu-icon {
+        cursor: pointer;
+        display: inline-block;
+
+        .bar-wrap {
+            width: 36px;
+
+            &:hover {
+                span {
+                    &::before {
+                        width: 36px !important;
+                    }
+                }
+            }
+
+            span {
+                width: 36px;
+                height: 4px;
+                background: transparent;
+                margin-bottom: 5px;
+                display: block;
+                position: relative;
+                overflow: hidden;
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    bottom: 0;
+                    background: $primary;
+                    width: 36px;
+                    border-radius: 8px;
+                    transition: all 0.3s;
+
+
+                }
+
+                &:first-child {
+
+                    &::before {
+                        right: 0;
+                        width: 26px;
+
+                    }
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+
+                    &::before {
+                        left: 0;
+                        width: 26px;
+
+                    }
+                }
+            }
+        }
+    }
+
+    &.sticky {
+        position: fixed;
+        background: $pale;
+        padding: 16px 0;
+        transition: all 0.3s;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.20);
+        padding-left: 20px;
+        border-radius: 0 0 0 50px;
+
+        @include lg {
+            border-radius: 0 0 0 100px;
+            padding-left: 25px;
+        }
+
+        .header-logo {
+            max-width: 115px;
+
+            @include lg {
+                max-width: 146px;
+            }
+
+        }
+
+        .navbar-nav {
+            .close-icon {
+                @include xxl {
+                    top: 30px;
+                    right: 48px;
+                }
+            }
+        }
+
+    }
+}
